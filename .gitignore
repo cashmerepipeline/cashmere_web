@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# venv
+bin/
+include/
+lib/
+*.whl
