@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>{{ page.title }}</h2>
-    {{ page.html|safe }}
+    
+    <div class="jumbotron" >
+        <h2>{{ page.title }}</h2>
+        {{ page.html|safe }} 
+        <p> contest </p>
+    </div>
+    
 {% endblock content %}
