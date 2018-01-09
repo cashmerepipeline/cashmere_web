@@ -27,8 +27,11 @@
     <script src="{{bootstrap_find_resource('jquery.js', cdn='jquery')}}"></script>
     <script src="{{bootstrap_find_resource('js/bootstrap.js', cdn='bootstrap')}}"></script>
     {%- endblock scripts %}
+
+    {% block footer %}  {% endblock footer %}
     {%- endblock body %}
   </body>
+ 
 {%- endblock html %}
 </html>
 {% endblock doc -%}

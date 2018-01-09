@@ -2,8 +2,13 @@
 
 {% block title %}Cashmere{% endblock %}
 
+{% block styles %}
+ {{super()}}
+ <link href="/static/css/sticky-footer.css" rel="stylesheet">
+{% endblock %}
+
 {% block navbar %}
-<div class="navbar navbar-inverse" role="navigation">
+<div class="navbar navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -19,6 +24,7 @@
                 <li><a href="/">首页</a></li>
                 <li><a href="/">流程规范</a></li>
                 <li><a href="/">技术服务</a></li>
+                <li><a href="/">开发案例</a></li>
                 <li><a href="/">教程</a></li>
                 <li><a href="/">关于我们</a></li>
             </ul>
@@ -35,11 +41,17 @@
 </div>
 {% endblock %}
 
-{% block footer %}
-<footer class="footer">
-    <p>&copy; 2016 Company, Inc.</p>
-  </footer>
+{%block footer%}
+<footer class="footer navbar-static-bottom">
+        <div class="container">
+          <p class="text-muted">Place sticky footer content here.</p>
+        </div>
+      </footer>
+</footer>
 {% endblock %}
+
+
+
 
 
 
