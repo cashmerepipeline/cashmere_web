@@ -18,10 +18,9 @@
   </head>
   <body{% block body_attribs %}{% endblock body_attribs %}>
     {% block body -%}
-    {% block navbar %}
-    {%- endblock navbar %}
-    {% block content -%}
-    {%- endblock content %}
+      {% block navbar %}  {%- endblock navbar %}
+
+      {% block content -%}  {%- endblock content %}
 
     {% block scripts %}
     <script src="{{bootstrap_find_resource('jquery.js', cdn='jquery')}}"></script>
@@ -29,6 +28,7 @@
     {%- endblock scripts %}
 
     {% block footer %}  {% endblock footer %}
+
     {%- endblock body %}
   </body>
  

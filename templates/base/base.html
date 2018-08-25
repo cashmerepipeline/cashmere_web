@@ -1,0 +1,14 @@
+{% extends "base/bootstrap_base.html" %}
+
+{% block title %} Cashmere {% endblock %}
+
+{% block styles %}
+ {{super()}}
+ <link href="/static/css/sticky-footer.css" rel="stylesheet">
+{% endblock %}
+
+{% include "base/navbar.html" %}
+
+{% include "base/content.html" %}
+
+{% include "base/footer.html" %}
