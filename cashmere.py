@@ -33,6 +33,7 @@ def page(path):
 @app.route('/productions/')
 def productions():
     articles = get_articles("productions")
+    print(articles)
     return render_template('productions/index.html', pages=articles)
 
 @app.route('/productions/<path:path>/')
@@ -91,7 +92,7 @@ def demos_article(path):
 def get_articles(path_name, reverse=False):
     """ Returns all published blog articles ordered by date. """
     articles = [p for p in flatpages if p.path.startswith(path_name)]
-    articles = [p for p in articles if p.meta.get('published', False)]
+    # articles = [p for p in articles if p.meta.get('published', False)]
     articles = sorted(articles,
                       reverse=reverse,
                       key=lambda k: k.meta['date'])

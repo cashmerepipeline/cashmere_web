@@ -3,6 +3,11 @@
 {% block content %}
     <div class="container">
         <h2>List of pages</h2>
+        <ul>
+            {% for page in pages %}
+                <li><a href="{{ url_for('page', path=page.path) }}">{{ page.title }}</a></li>
+            {% endfor %}
+        </ul>
         <p>Service Main Page</p>
     </div>
 {% endblock content %}
