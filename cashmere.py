@@ -38,7 +38,7 @@ def productions():
 
 @app.route('/productions/<path:path>/')
 def production_article(path):
-    page = flatpages.get_or_404(path)
+    page = flatpages.get_or_404("productions/%s"%path)
     return render_template('productions/page.html', page=page)
 
 @app.route('/pipeline/')
@@ -48,7 +48,7 @@ def pipeline():
 
 @app.route('/pipeline/<path:path>/')
 def pipeline_article(path):
-    page = flatpages.get_or_404(path)
+    page = flatpages.get_or_404("pipeline/%s"%path)
     return render_template('pipeline/page.html', page=page)
 
 @app.route('/services/')
@@ -58,7 +58,7 @@ def services():
 
 @app.route('/services/<path:path>/')
 def services_article(path):
-    page = flatpages.get_or_404(path)
+    page = flatpages.get_or_404("services/%s"%path)
     return render_template('services/page.html', page=page)
 
 @app.route('/courses/')
@@ -68,7 +68,7 @@ def courses():
 
 @app.route('/courses/<path:path>/')
 def courses_article(path):
-    page = flatpages.get_or_404(path)
+    page = flatpages.get_or_404("courses/%s"%path)
     return render_template('courses/page.html', page=page)
 
 @app.route('/demos/')
@@ -78,7 +78,7 @@ def demos():
 
 @app.route('/demos/<path:path>/')
 def demos_article(path):
-    page = flatpages.get_or_404(path)
+    page = flatpages.get_or_404("demos/%s"%path)
     return render_template('demos/page.html', page=page)
 
 # @app.route('/about/')
