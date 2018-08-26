@@ -1,0 +1,14 @@
+
+<!-- article thumb display -->
+
+<div class="media">
+    <div class="media-left">
+      <a href="{{ url_for('page', path=page.path) }}">
+        <img class="media-object" src="{{page.image}}" alt="{{page.image}}" style="width: 64px; height: 64px;">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><a href="{{ url_for('page', path=page.path) }}">{{ page.title }}</a></h4>
+      {{ page.html|safe }}
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+    <div class="container">
+        <ul>
+            {% for page in pages %}
+                {% include "base/article_thumb.html" %}
+                <h3>  </h3>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock content %}

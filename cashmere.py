@@ -44,7 +44,7 @@ def production_article(path):
 @app.route('/pipeline/')
 def pipeline():
     articles = get_articles("pipeline")
-    return render_template('pipeline/index.html', pages=articles)
+    return render_template('module_index.html', pages=articles)
 
 @app.route('/pipeline/<path:path>/')
 def pipeline_article(path):
@@ -54,7 +54,7 @@ def pipeline_article(path):
 @app.route('/services/')
 def services():
     articles = get_articles("services")
-    return render_template('services/index.html', pages=articles)
+    return render_template('module_index.html', pages=articles)
 
 @app.route('/services/<path:path>/')
 def services_article(path):
@@ -64,7 +64,7 @@ def services_article(path):
 @app.route('/courses/')
 def courses():
     articles = get_articles("courses")
-    return render_template('courses/index.html', pages=articles)
+    return render_template('module_index.html', pages=articles)
 
 @app.route('/courses/<path:path>/')
 def courses_article(path):
@@ -74,7 +74,7 @@ def courses_article(path):
 @app.route('/demos/')
 def demos():
     articles = get_articles("demos")
-    return render_template('demos/index.html', pages=articles)
+    return render_template('module_index.html', pages=articles)
 
 @app.route('/demos/<path:path>/')
 def demos_article(path):
