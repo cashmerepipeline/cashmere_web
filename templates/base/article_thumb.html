@@ -9,6 +9,6 @@
     </div>
     <div class="media-body">
       <h4 class="media-heading"><a href="{{ url_for('page', path=page.path) }}">{{ page.title }}</a></h4>
-      {{ page.html|safe }}
+      {{ page.html[:50]|safe }}
     </div>
 </div>

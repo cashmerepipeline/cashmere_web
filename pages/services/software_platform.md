@@ -1,7 +1,6 @@
-title: Software Platform
-date: 2014-10-14
+title: 软件运行环境组建
+date: 2019-01-20
 tags: [general, blog]
 
 **Software Platform**!
 
-Software Platform
